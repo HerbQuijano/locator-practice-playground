@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locator Practice Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Locator Practice Playground</h1>
+  <div class="controls">
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty" onchange="init()">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+<!-- Removed template selector for stability -->
+
+
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+
+  <div id="challenge-area">
+    <p><strong>Challenge:</strong> <span id="challenge-text"></span></p>
+    <input type="text" id="locator-input" placeholder="Enter your locator (XPath or CSS)" />
+    <button onclick="checkLocator()">Check</button>
+    <button onclick="init()">Next Challenge</button>
+    <button onclick="showHint()">Show Hint</button>
+    <p id="feedback"></p>
+    <p><strong>Score:</strong> <span id="score">0</span></p>
+    <p id="hint-box"></p>
+    <label>
+      <input type="checkbox" id="learning-mode" /> Learning Mode
+    </label>
+    <button onclick="resetScore()">Reset Score</button>
+  </div>
+
+  <div id="random-elements"></div>
+
+  <script src="practice.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark {
+  background-color: #222;
+  color: #eee;
+}
+
+#challenge-area {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f8f8f8;
+}
+
+.dark #challenge-area {
+  background: #333;
+  border-color: #555;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+}
+
+#feedback {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#random-elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.box {
+  padding: 10px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  min-width: 100px;
+  text-align: center;
+  background: #fff;
+}
+
+.dark .box {
+  background: #444;
+  border-color: #888;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hint {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff9c4;
+  border-left: 4px solid #fbc02d;
+  font-family: monospace;
+}
+
+#hint-box {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e1f5fe;
+  border-left: 4px solid #0288d1;
+  font-style: italic;
+}
+
+select {
+  padding: 6px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.dark select {
+  background-color: #333;
+  color: #eee;
+}
+
+.challenge-target::after {
+  content: '🎯';
+  display: block;
+  font-size: 18px;
+  margin-top: 5px;
+  color: green;
+  opacity: 0.3;
+}
